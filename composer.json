@@ -1,7 +1,7 @@
 {
-    "name": "hypatia-science-consulting/hypatia-science-consulting",
+    "name": "snaegle/tmpl_hypatia",
     "type": "typo3-cms-extension",
-    "description": "",
+    "description": "Template for Hypatia Science Consulting",
     "homepage": "https://science-consulting.info",
     "license": ["GPL-2.0-or-later"],
     "keywords": ["TYPO3 CMS"],
@@ -10,7 +10,7 @@
     },
     "autoload": {
         "psr-4": {
-            "HypatiaScienceConsulting\\HypatiaScienceConsulting\\": "Classes/"
+            "Snaegle\\TmplHypatia\\": "Classes/"
         }
     }
 }
