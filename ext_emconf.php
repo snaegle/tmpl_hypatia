@@ -7,13 +7,6 @@ $EM_CONF[$_EXTKEY] = [
     'title' => 'Hypatia Science Consulting',
     'description' => '',
     'category' => 'templates',
-    'constraints' => [
-        'depends' => [
-            'bootstrap_package' => '10.0.0-11.0.99',
-        ],
-        'conflicts' => [
-        ],
-    ],
     'autoload' => [
         'psr-4' => [
             'HypatiaScienceConsulting\\HypatiaScienceConsulting\\' => 'Classes',
