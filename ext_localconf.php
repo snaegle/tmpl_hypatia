@@ -1,6 +1,10 @@
 <?php
 defined('TYPO3_MODE') || die();
 
+
+// Entry point for all TypoScript
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTypoScript('tmpl_hypatia', 'setup', '<INCLUDE_TYPOSCRIPT: source="FILE:EXT:tmpl_hypatia/Configuration/TypoScript/setup.typoscript">');
+
 /***************
  * Add default RTE configuration
  */
