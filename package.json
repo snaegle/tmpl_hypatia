@@ -1,0 +1,48 @@
+{
+  "name": "tmpl_hypatia",
+  "version": "0.8.0",
+  "description": "Template for Hypatia Science Consulting",
+  "private": true,
+  "repository": "http://github.com/snaegle/tmpl_hypatia",
+  "author": "Sibylle Nägle",
+  "license": "AGPL-3.0",
+  "devDependencies": {
+    "@babel/cli": "^7.10",
+    "@babel/core": "^7.11",
+    "@babel/preset-env": "^7.11",
+    "@babel/register": "^7.10",
+    "autoprefixer": "^9.8",
+    "bootstrap": "^4.5",
+    "buildify": "^0.4",
+    "cypress": "^3.8",
+    "eslint": "^5.16",
+    "gulp": "^4.0",
+    "gulp-autoprefixer": "^7.0",
+    "gulp-babel": "^8.0",
+    "gulp-concat": "^2.6",
+    "gulp-jshint": "^2.1",
+    "gulp-line-ending-corrector": "^1.0",
+    "gulp-notify": "^3.2",
+    "gulp-postcss": "^8.0",
+    "gulp-sass": "^4.1",
+    "gulp-scss-lint": "^1.0",
+    "gulp-sourcemaps": "^2.6",
+    "gulp-stylelint": "^7.0",
+    "gulp-uglify": "^3.0",
+    "jshint": "^2.11",
+    "node-sass": "^4.14",
+    "npmrc": "^1.1",
+    "postcss": "^6.0",
+    "postcss-cli": "^4.1",
+    "stylelint": "^9.9"
+  },
+  "scripts": {
+    "lintJs": "./node_modules/.bin/eslint Resources/Private/JavaScript/*.js",
+    "createDevCss": "./node_modules/.bin/node-sass --source-map true Resources/Private/Scss/hypatia.scss Build/Css/hypatia.css; ./node_modules/.bin/postcss --use autoprefixer -b 'last 2 versions' Build/Css/hypatia.css -o Build/Css/hypatia.css",
+    "babel": "./node_modules/.bin/babel Build/JavaScript/concatenated.js -o Build/JavaScript/hypatia.js",
+    "devAll": "npm run lintJs && npm run createDevCss && node build && npm run babel && cp ./Build/JavaScript/hypatia.js ./Resources/Public/JavaScript/hypatia.js && cp ./Build/Css/concatenated.css ./Resources/Public/Css/hypatia.css"
+  },
+  "dependencies": {
+    "jquery": "^3.5.1"
+  }
+}

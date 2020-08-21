@@ -1,3 +1,13 @@
+lib.ids {
+    id_sitemap = TEXT
+    id_sitemap.value = {$ids.sitemap}
+    id_contact = TEXT
+    id_contact.value = {$ids.contact}
+    id_legal = TEXT
+    id_legal.value = {$ids.value}
+
+}
+
 page = PAGE
 page {
     typeNum = 0
@@ -7,25 +17,32 @@ page {
     }
 
     includeJSLibs {
+        10 = EXT:tmpl_hypatia/Resources/Public/JavaScript/hypatia.js
     }
 
     includeCSS {
+        10 = EXT:tmpl_hypatia/Resources/Public/Css/hypatia.css
     }
 
     meta {
-        description = {$translation.meta.description.de}
-        keywords = {$translation.meta.keywords.de}
+        charset = UTF-8
+        og:locale = en-US
+        og:sitename = Hypatia Science Consulting
+        og:description = Science consulting
+        viewport = width=device-width, initial-scale=1.0, shrink-to-fit=no
     }
 
     10 = FLUIDTEMPLATE
     10 {
         file = EXT:tmpl_hypatia/Resources/Private/Templates/Page.html
         extbase.controllerExtensionName = tmpl_hypatia
-        partialRootPath = EXT:tmpl_hypatia/Resources/Private/Templates/Partials/
-        layoutRootPath = EXT:tmpl_hypatia/Resources/Private/Templates/Layouts/
+        partialRootPath = EXT:tmpl_hypatia/Resources/Private/Partials/
+        layoutRootPath = EXT:tmpl_hypatia/Resources/Private/Layouts/
 
-        #variables < lib.ids
+        variables < lib.ids
         variables {
+
+            CONTENT < styles.content.get
         }
     }
 }

@@ -1,5 +1,5 @@
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:tmpl_hypatia/Configuration/TypoScript/Config/setup.typoscript">
-#<INCLUDE_TYPOSCRIPT: source="DIR:EXT:tmpl_hypatia/Configuration/TypoScript/Config" extensions="typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:tmpl_hypatia/Configuration/Config" extensions="typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:tmpl_hypatia/Configuration/TypoScript/Elements/" extensions="typoscript">
 
 
 config {
@@ -24,38 +24,4 @@ config {
     absRefPrefix = auto
     debug = 0
     noPageTitle = 2
-}
-
-page = PAGE
-page {
-    typeNum = 0
-    shortcutIcon = EXT:tmpl_hypatia/Resources/Public/Images/favicon.ico
-    config {
-        index_enable = 1
-    }
-
-    includeJSLibs {
-    }
-
-    includeCSS {
-    }
-
-    meta {
-        description = {$translation.meta.description.de}
-        keywords = {$translation.meta.keywords.de}
-    }
-
-    10 = FLUIDTEMPLATE
-    10 {
-        file = EXT:tmpl_hypatia/Resources/Private/Templates/Page.html
-        extbase.controllerExtensionName = tmpl_hypatia
-        partialRootPath = EXT:tmpl_hypatia/Resources/Private/Templates/Partials/
-        layoutRootPath = EXT:tmpl_hypatia/Resources/Private/Templates/Layouts/
-
-        variables < lib.ids
-        variables {
-
-            CONTENT < styles.content.get
-        }
-    }
 }

@@ -1,0 +1,54 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  color: #2c2107 !important;
+  height: 100%;
+  color: #2c2107;
+  background-color: #ece5d6; }
+
+a {
+  color: #2c2107 !important; }
+
+.header {
+  background-color: #ece5d6;
+  height: 50px; }
+
+.main {
+  background: url("../Images/schiff.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100%;
+  position: relative;
+  top: 60px; }
+
+.main > .container {
+  height: 100%;
+  background-color: rgba(236, 229, 214, 0.7); }
+
+.main h2:first-child {
+  padding-top: 16px; }
+
+.breadcrumb {
+  background: transparent;
+  padding: 12px 0; }
+
+.content {
+  height: 100%; }
+
+.footer {
+  background-color: #ece5d6;
+  width: 100%;
+  height: 50px;
+  line-height: 60px;
+  margin: 0; }
+
+.footer .footer-list {
+  list-style: none;
+  display: flex;
+  justify-content: center; }
+
+.footer-list .footer-item {
+  padding: 0 6px; }
+
+.navbar .nav-item {
+  padding: 0 6px; }
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL1Jlc291cmNlcy9Qcml2YXRlL1Njc3MvaHlwYXRpYS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUlBO0VBQ0UsVUFBUztFQUNULFdBQVU7RUFDViwwQkFBZ0M7RUFDaEMsYUFBWTtFQUNaLGVBVHFCO0VBVXJCLDBCQVRzQixFQVV2Qjs7QUFFRDtFQUNFLDBCQUFnQyxFQUNqQzs7QUFFRDtFQUNFLDBCQWpCc0I7RUFrQnRCLGFBQVksRUFDYjs7QUFRRDtFQUNFLGdFQUErRDtFQUMvRCx1QkFBc0I7RUFDdEIsYUFBWTtFQUNaLG1CQUFrQjtFQUNsQixVQUFTLEVBQ1Y7O0FBRUQ7RUFDRSxhQUFZO0VBQ1osMkNBcENnRCxFQXFDakQ7O0FBRUQ7RUFDRSxrQkFBaUIsRUFDbEI7O0FBRUQ7RUFDRSx3QkFBdUI7RUFDdkIsZ0JBQWUsRUFDaEI7O0FBRUQ7RUFDRSxhQUFZLEVBQ2I7O0FBRUQ7RUFDRSwwQkF0RHNCO0VBdUR0QixZQUFXO0VBQ1gsYUFBWTtFQUNaLGtCQUFpQjtFQUNqQixVQUFTLEVBQ1Y7O0FBRUQ7RUFDRSxpQkFBZ0I7RUFDaEIsY0FBYTtFQUNiLHdCQUF1QixFQUN4Qjs7QUFFRDtFQUNFLGVBQWMsRUFDZjs7QUFFRDtFQUNFLGVBQWMsRUFDZiIsImZpbGUiOiJoeXBhdGlhLmNzcyJ9 */
