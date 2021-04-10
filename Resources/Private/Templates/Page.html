@@ -1,4 +1,10 @@
-<f:render partial="Header" arguments="{_all}" />
-<f:render partial="Main" arguments="{_all}" />
-<f:render partial="Footer" arguments="{_all}" />
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+          data-namespace-typo3-fluid="true">
 
+<f:layout name="Main" />
+
+<f:section name="Body">
+        {subTemplate -> f:format.raw()}
+
+</f:section>
+</html>

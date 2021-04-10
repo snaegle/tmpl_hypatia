@@ -1,42 +1,55 @@
-$color-darkest: #2c2107;
-$color-lightest: #ece5d6;
-$color-lightest-transparent: rgba(236,229,214,0.7);
+@import "vars";
 
 html, body {
   margin: 0;
   padding: 0;
-  color: $color-darkest !important;
+  color: $color-darkest;
   height: 100%;
   color: $color-darkest;
   background-color: $color-lightest;
+  font-size: $font-base-size;
+}
+
+.background-image {
+  background: url('../Images/schiff.jpg') center center;
+  background-size: cover;
+  position: fixed;
+  top: 50px;
+  background-size: cover;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 a {
   color: $color-darkest !important;
+  text-decoration: underline;
+}
+
+a:visited,
+a:hover,
+a:focus {
+  color: $color-darkest;
+}
+
+nav a {
+  text-decoration: none; // in navigation, its clearly a link
 }
 
 .header {
   background-color: $color-lightest;
-  height: 50px;
-}
-
-.header > .container {
-}
-
-.background {
+  z-index: 100;
 }
 
 .main {
-  background: url('../Images/schiff.jpg') no-repeat center center;
-  background-size: cover;
-  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
   position: relative;
-  top: 60px;
+  margin-top: 50px;
+  background-color: $color-lightest-transparent;
 }
 
 .main > .container {
-  height: 100%;
-  background-color: $color-lightest-transparent;
+  padding-bottom: 60px; // come up over footer
 }
 
 .main h2:first-child {
@@ -67,7 +80,15 @@ a {
 }
 
 .footer-list .footer-item {
-  padding: 0 6px;
+  padding: 0 12px;
+}
+
+.navbar {
+  padding: 6px 0;
+}
+
+.navbar-nav {
+  align-items: center;
 }
 
 .navbar .nav-item {

@@ -1,0 +1,43 @@
+
+
+mod.web_layout.BackendLayouts {
+  ContentPage {
+    title = Contentpage
+    config {
+      backend_layout {
+        colCount = 1
+        rowCount = 1
+        rows {
+          1 {
+            columns {
+              1 {
+                name = Maincontent
+                colPos = 0
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  GoemlPage {
+    title = Goemlpage
+    config {
+      backend_layout {
+        colCount = 1
+        rowCount = 1
+        rows {
+          1 {
+            columns {
+              1 {
+                name = Maincontent
+                colPos = 0
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

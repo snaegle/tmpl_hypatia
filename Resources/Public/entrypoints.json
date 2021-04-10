@@ -1,0 +1,22 @@
+{
+  "entrypoints": {
+    "hypatia": {
+      "js": [
+        "/typo3conf/ext/tmpl_hypatia/Resources/Public/runtime.js",
+        "/typo3conf/ext/tmpl_hypatia/Resources/Public/hypatia.js"
+      ],
+      "css": [
+        "/typo3conf/ext/tmpl_hypatia/Resources/Public/hypatia.css"
+      ]
+    },
+    "goeml": {
+      "js": [
+        "/typo3conf/ext/tmpl_hypatia/Resources/Public/runtime.js",
+        "/typo3conf/ext/tmpl_hypatia/Resources/Public/goeml.js"
+      ],
+      "css": [
+        "/typo3conf/ext/tmpl_hypatia/Resources/Public/goeml.css"
+      ]
+    }
+  }
+}

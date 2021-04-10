@@ -1,0 +1,29 @@
+
+#
+# BACKENDLAYOUT: Default
+#
+mod {
+    web_layout {
+        BackendLayouts {
+            goemlPage {
+                title = goemlpage
+                config {
+                    backend_layout {
+                        colCount = 1
+                        rowCount = 1
+                        rows {
+                            1 {
+                                columns {
+                                    1 {
+                                        name = Main
+                                        colPos = 0
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
