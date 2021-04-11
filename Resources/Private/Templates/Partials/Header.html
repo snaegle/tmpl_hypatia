@@ -1,13 +1,23 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers"
+    xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers" data-namespace-typo3-fluid="true" />
+
 <header id ="header" class="header fixed-top">
 
-  <div class="container">
 
-    <nav class="navbar navbar-expand-md sticky-top">
-      <a class="navbar-brand" href="/home">Hypatia Science Consulting</a>
-      <ul class="navbar-nav">
-        <f:cObject typoscriptObjectPath="lib.menu"/>
-      </ul>
-    </nav>
+  <v:page.menu pageUid="1" as="page">
+    <div class="container">
+
+      <nav class="navbar navbar-expand-md sticky-top">
+        <a class="navbar-brand" href="/home">Hypatia Science Consulting</a>
+    <ul class="navbar-nav">
+    <f:for each="{0:page.2,1:page.6,2:page.7,3:page.3,4:page.10,5:page.4}" as="pageObject" iteration="pageiterator">
+      <li class="nav-item">
+        <a href="#{pageObject.title}">{pageObject.title}</a>
+      </li>
+      </f:for>
+  </ul>
+  </nav>
   </div>
+</v:page.menu>
 </header>
 

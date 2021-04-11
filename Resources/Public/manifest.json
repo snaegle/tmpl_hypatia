@@ -1,8 +1,8 @@
 {
+  "typo3conf/ext/tmpl_hypatia/Resources/Public/hypatia.css": "/typo3conf/ext/tmpl_hypatia/Resources/Public/hypatia.css",
   "typo3conf/ext/tmpl_hypatia/Resources/Public/hypatia.js": "/typo3conf/ext/tmpl_hypatia/Resources/Public/hypatia.js",
+  "typo3conf/ext/tmpl_hypatia/Resources/Public/goeml.css": "/typo3conf/ext/tmpl_hypatia/Resources/Public/goeml.css",
   "typo3conf/ext/tmpl_hypatia/Resources/Public/goeml.js": "/typo3conf/ext/tmpl_hypatia/Resources/Public/goeml.js",
   "typo3conf/ext/tmpl_hypatia/Resources/Public/runtime.js": "/typo3conf/ext/tmpl_hypatia/Resources/Public/runtime.js",
-  "typo3conf/ext/tmpl_hypatia/Resources/Public/hypatia.css": "/typo3conf/ext/tmpl_hypatia/Resources/Public/hypatia.css",
-  "typo3conf/ext/tmpl_hypatia/Resources/Public/goeml.css": "/typo3conf/ext/tmpl_hypatia/Resources/Public/goeml.css",
   "typo3conf/ext/tmpl_hypatia/Resources/Public/images/schiff.jpg": "/typo3conf/ext/tmpl_hypatia/Resources/Public/images/schiff.58e38b37.jpg"
 }

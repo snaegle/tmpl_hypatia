@@ -4,8 +4,9 @@ lib.ids {
     id_contact = TEXT
     id_contact.value = {$ids.contact}
     id_legal = TEXT
-    id_legal.value = {$ids.value}
-
+    id_legal.value = {$ids.legal}
+    id_pages = OBJECT
+    id_pages.value = {$ids.listOfPages}
 }
 
 page = PAGE

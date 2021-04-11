@@ -2,26 +2,10 @@
 @import "vars";
 
 
-.main {
-    min-width: 100%;
-    min-height: 100%;
-    position: relative;
-    margin-top: 50px;
-    background-color: $color-lightest-transparent;
-  }
-  
-  .main > .container {
-    padding-bottom: 60px; // come up over footer
-  }
-  
-  .main h2:first-child {
-    padding-top: 16px;
-  }
-
-h1 {
+.goeml h1 {
     font-size: 1.5em;
 }
-  
-h2 {
+
+.goeml h2 {
     font-size: 1.3em;
 }
