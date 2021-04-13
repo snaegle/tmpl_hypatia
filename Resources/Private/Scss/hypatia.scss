@@ -1,0 +1,105 @@
+@import "vars";
+
+html, body {
+  margin: 0;
+  padding: 0;
+  color: $color-darkest;
+  height: 100%;
+  color: $color-darkest;
+  background-color: $color-lightest;
+  font-size: $font-base-size;
+}
+
+.background-image {
+  background: url('../Images/schiff.jpg') center center;
+  background-size: cover;
+  position: fixed;
+  top: 50px;
+  background-size: cover;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+a {
+  color: $color-darkest !important;
+  text-decoration: underline;
+}
+
+a:visited,
+a:hover,
+a:focus {
+  color: $color-darkest;
+}
+
+nav a {
+  text-decoration: none; // in navigation, its clearly a link
+}
+
+.header {
+  background-color: $color-lightest;
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.16), 0 2px 4px rgba(0,0,0,0.23);
+}
+
+.main {
+  min-width: 100%;
+  min-height: 100%;
+  position: relative;
+  margin-top: 50px;
+  background-color: $color-lightest-transparent;
+}
+
+.main > .container-fluid {
+  padding-bottom: 60px; // come up over footer
+  padding-top: 60px; // come up over footer
+  z-index: 50;
+  box-shadow: 0 0 10px rgba(0,0,0,0.16), 0 0 7px rgba(0,0,0,0.23);
+}
+
+.layout-0 {
+  background: url('../Images/schiff.jpg') center center;
+}
+
+.main h2:first-child {
+  padding-top: 16px;
+}
+
+.breadcrumb {
+  background: transparent;
+  padding: 12px 0;
+}
+
+.footer {
+  background-color: $color-lightest;
+  width: 100%;
+  height: 50px;
+  line-height: 60px;
+  margin: 0;
+  z-index: 100;
+}
+
+.footer .footer-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-list .footer-item {
+  padding: 0 12px;
+}
+
+.navbar {
+  padding: 6px 0;
+}
+
+.navbar-nav {
+  align-items: center;
+}
+
+.navbar .nav-item {
+  padding: 0 6px;
+}
+
+.title-anchor {
+	scroll-margin-top: 3em;
+}

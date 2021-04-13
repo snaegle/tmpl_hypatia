@@ -1,0 +1,15 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers"
+    xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers" data-namespace-typo3-fluid="true" />
+
+<f:render partial="Header" arguments="{_all}" />
+<main id="main" role="main" class="main clearfix">
+    <v:page.menu pageUid="1" as="page">
+        <f:for each="{0:page.2,1:page.6,2:page.7,3:page.3,4:page.10,5:page.4}" as="pageObject" iteration="pageiterator">
+            <!-- Layout, depending on odd number or not -->
+            <f:render partial="Onepager" section="main"
+                arguments="{pageObject:pageObject, layout:'{f:if(condition: pageiterator.isOdd, then:\'0\', else:\'1\')}'}" />
+        </f:for>
+    </v:page.menu>
+</main>
+
+<f:render partial="Footer" arguments="{_all}" />

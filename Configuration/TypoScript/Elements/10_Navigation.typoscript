@@ -1,0 +1,31 @@
+lib.menu = HMENU
+lib.menu {
+    expAll = 1
+    wrap = |
+    1 = TMENU
+    1 {
+        expAll = 1
+        NO = 1
+        NO {
+            wrapItemAndSub = <li class="nav-item">|</li>
+        }
+    }
+    2 < .1
+}
+
+lib.breadcrumb = COA
+lib.breadcrumb {
+    10 = HMENU
+    10 {
+        special = rootline
+        1 = TMENU
+        1 {
+            noBlur = 1
+            NO = 1
+            NO {
+                linkWrap = <li class="breadcrumb-item">|</li>
+            }
+        }
+    }
+    wrap = |
+}

@@ -1,60 +1,11 @@
-######################
-#### DEPENDENCIES ####
-######################
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/constants.typoscript">
-
-
-############
-### PAGE ###
-############
-page {
-    logo {
-        file = EXT:hypatia_science_consulting/Resources/Public/Images/logo.svg
-        fileInverted = EXT:hypatia_science_consulting/Resources/Public/Images/logo-inverted.svg
-        height = 52
-        width = 192
-        alt = Hypatia Science Consulting
-        linktitle = Hypatia Science Consulting
-    }
-    favicon {
-        file = EXT:hypatia_science_consulting/Resources/Public/Icons/favicon.ico
-    }
-    fluidtemplate {
-        layoutRootPath = EXT:hypatia_science_consulting/Resources/Private/Layouts/Page/
-        partialRootPath = EXT:hypatia_science_consulting/Resources/Private/Partials/Page/
-        templateRootPath = EXT:hypatia_science_consulting/Resources/Private/Templates/Page/
-    }
-}
-
-
-##################
-### EXTENSIONS ###
-##################
-plugin.bootstrap_package {
+plugin.tx_publications {
     view {
-        layoutRootPath = EXT:hypatia_science_consulting/Resources/Private/Layouts/
-        partialRootPath = EXT:hypatia_science_consulting/Resources/Private/Partials/
-        templateRootPath = EXT:hypatia_science_consulting/Resources/Private/Templates/
+        templateRootPaths.100 = EXT:tmpl_hypatia/Resources/Private/Templates/Extensions/Publications/Templates
+        partialRootPaths.100 = EXT:tmpl_hypatia/Resources/Private/Templates/Extensions/Publications/Partials
+        layoutRootPaths.100 = EXT:tmpl_hypatia/Resources/Private/Templates/Extensions/Publications/Layouts
     }
-}
 
-
-########################
-### CONTENT ELEMENTS ###
-########################
-plugin.bootstrap_package_contentelements {
-    view {
-        layoutRootPath = EXT:hypatia_science_consulting/Resources/Private/Layouts/ContentElements/
-        partialRootPath = EXT:hypatia_science_consulting/Resources/Private/Partials/ContentElements/
-        templateRootPath = EXT:hypatia_science_consulting/Resources/Private/Templates/ContentElements/
-    }
-}
-
-
-################################
-### BOOTSTRAP SCSS CONSTANTS ###
-################################
-plugin.bootstrap_package.settings.scss {
-    primary = #eb3e4a
-    secondary = #013859
+	settings {
+		storagePid = {TSFE:id}
+	}
 }

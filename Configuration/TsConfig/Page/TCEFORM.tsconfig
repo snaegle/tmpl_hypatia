@@ -9,3 +9,14 @@ TCEFORM {
 
     }
 }
+
+# Create onepager
+# According to https://stackoverflow.com/questions/51110275/onepage-layout-in-typo3
+TCEFORM.pages.layout {
+    removeItems = 1,2,3
+    altLabels.0 = None
+    addItems {
+        10 = Image
+        20 = Blank
+    }
+}

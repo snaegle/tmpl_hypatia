@@ -1,0 +1,28 @@
+#
+# BACKENDLAYOUT: Default
+#
+mod {
+    web_layout {
+        BackendLayouts {
+            defaultPage {
+                title = defaultpage
+                config {
+                    backend_layout {
+                        colCount = 1
+                        rowCount = 1
+                        rows {
+                            1 {
+                                columns {
+                                    1 {
+                                        name = Main
+                                        colPos = 0
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,4 +1,4 @@
 #
 # BACKENDLAYOUTS
 #
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:hypatia_science_consulting/Configuration/TsConfig/Page/Mod/WebLayout/BackendLayouts" extensions="tsconfig">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:tmpl_hypatia/Configuration/TsConfig/Page/Mod/WebLayout/BackendLayouts" extensions="tsconfig">

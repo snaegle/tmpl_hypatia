@@ -1,30 +1,27 @@
-######################
-#### DEPENDENCIES ####
-######################
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/setup.typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:tmpl_hypatia/Configuration/Config" extensions="typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:tmpl_hypatia/Configuration/TypoScript/Elements/" extensions="typoscript">
 
 
-##############
-#### PAGE ####
-##############
-page {
-    includeCSS {
-        theme = EXT:hypatia_science_consulting/Resources/Public/Scss/Theme/theme.scss
-    }
-
-    includeJSLibs {
-
-    }
-
-    includeJS {
-
-    }
-
-    includeJSFooterlibs {
-
-    }
-
-    includeJSFooter {
-        hypatia_science_consulting_scripts = EXT:hypatia_science_consulting/Resources/Public/JavaScript/Dist/scripts.js
-    }
+config {
+    no_cache = 0
+    sendCacheHeaders = 1
+    uniqueLinkVars = 1
+    linkVars = L(0-6)
+    sys_language_uid = 0
+    language = de
+    sys_language_mode = content_fallback
+    locale_all = de_DE.utf8
+    prefixLocalAnchors = all
+    doctype = html5
+    xmlprologue = none
+    removeDefaultJS = 0
+    disablePrefixComment = 1
+    simulateStaticDocuments = 0
+    absRefPrefix = /
+    tx_realurl_enable = 1
+    htmlTag_langKey = de
+    index_enable = 1
+    absRefPrefix = auto
+    debug = 0
+    noPageTitle = 2
 }

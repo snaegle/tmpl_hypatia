@@ -5,12 +5,13 @@
     "homepage": "https://science-consulting.info",
     "license": ["GPL-2.0-or-later"],
     "keywords": ["TYPO3 CMS"],
-    "require": {
-        "bk2k/bootstrap-package": "^10.0 || ^11.0"
+    "replace": {
+      "tmpl_hypatia": "self.version"
     },
     "autoload": {
         "psr-4": {
             "Snaegle\\TmplHypatia\\": "Classes/"
         }
-    }
+    },
+    "prefer-stable": false
 }

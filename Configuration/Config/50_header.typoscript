@@ -1,0 +1,28 @@
+config {
+    # Add class to html-Tag
+    htmlTag_setParams = lang="en" xmlns="http://www.w3.org/1999/xhtml"
+
+    #add doctypedefinition to page
+    doctype = html5
+
+    absRefPrefix = /
+
+    # enable solr search
+    index.enable = 1
+
+    # enable verbatim error messages
+    contentObjectExceptionHandler = 1
+
+    no_cache = 1
+
+    prefixLocalAnchors = all
+    simulateStaticDocuments = 0
+    tx_realurl_enable = 1
+    concatenateJs = 0
+    compressJs = 0
+    concatenateCss = 0
+    compressCss = 0
+
+    spamProtectEmailAddresses = 2
+    spamProtectEmailAddresses_atSubst = (at)
+}
